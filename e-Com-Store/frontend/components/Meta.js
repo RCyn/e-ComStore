@@ -6,7 +6,7 @@ const Meta = () => (
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="/static/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
-    <title>eComm Store</title>
+    <title>e-Com Store</title>
   </Head>
 );
 
