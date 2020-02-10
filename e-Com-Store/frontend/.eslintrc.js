@@ -7,11 +7,11 @@ module.exports = {
   root: true,
   parserOptions: {
     parser: 'babel-eslint',
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: 'module',
-    "ecmaFeatures": {
-      "jsx": true
-  }
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   plugins: ['prettier'],
   extends: ['plugin:prettier/recommended'],
@@ -24,7 +24,7 @@ module.exports = {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-nested-ternary': 0,
     'jsx-quotes': 2,
-    'prefer-rest-params': 0
+    'prefer-rest-params': 0,
   },
   overrides: [
     // node files
