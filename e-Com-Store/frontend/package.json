@@ -1,7 +1,7 @@
 {
-  "name": "e-ComStore-frontend",
+  "name": "sick-fits-frontend",
   "version": "1.0.0",
-  "description": "e-ComStore! An example React, GraphQL, Next and Apollo",
+  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
@@ -9,9 +9,7 @@
     "start": "next start",
     "test": "NODE_ENV=test jest --watch",
     "test-win": "SET NODE_ENV=test&& jest --watch",
-    "heroku-postbuild": "next build",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
+    "heroku-postbuild": "next build"
   },
   "author": "",
   "license": "ISC",
@@ -41,20 +39,13 @@
     "waait": "^1.0.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
     "babel-jest": "^23.6.0",
     "babel-plugin-module-resolver": "^3.1.1",
     "casual": "^1.5.19",
     "enzyme-to-json": "^3.3.4",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
     "graphql-tools": "^4.0.0",
-    "husky": "^4.2.1",
     "jest": "^23.6.0",
-    "jest-transform-graphql": "^2.1.0",
-    "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1"
+    "jest-transform-graphql": "^2.1.0"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/jest.setup.js",
@@ -67,21 +58,6 @@
       ".*": "babel-jest",
       "^.+\\.js?$": "babel-jest"
     }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run format"
-    }
-  },
-  "lint-staged": {
-    "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.+(json|css|md)": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "//": "This is our babel config, I prefer this over a .babelrc file",
   "babel": {

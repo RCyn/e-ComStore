@@ -50,7 +50,6 @@ const fakeCartItem = overrides => ({
   quantity: 3,
   item: fakeItem(),
   user: fakeUser(),
-  // eslint-disable-next-line
   ...overrides,
 });
 
