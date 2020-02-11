@@ -1,7 +1,7 @@
 {
-  "name": "e-ComStore-frontend",
+  "name": "e-comstore-frontend",
   "version": "1.0.0",
-  "description": "e-ComStore! An example React, GraphQL, Next and Apollo",
+  "description": "e-Com Store! An example React, GraphQL, Next and Apollo",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
