@@ -16,6 +16,7 @@ const theme = {
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
 };
 
+// global styles
 injectGlobal`
   @font-face {
     font-family: 'radnika_next';
@@ -44,11 +45,13 @@ injectGlobal`
   }
 `;
 
+// page styles
 const StyledPage = styled.div`
   background: white;
   color: ${props => props.theme.black};
 `;
 
+// inner container styles
 const Inner = styled.div`
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
